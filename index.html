@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Première Section - Maquette Figma Responsive</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@500;800&family=Space+Mono:wght@400&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'bitter': ['Bitter', 'serif'],
+                        'space-mono': ['Space Mono', 'monospace'],
+                    },
+                    colors: {
+                        'gray-overlay': 'rgba(51, 51, 51, 0.5)',
+                        'black-overlay': 'rgba(0, 0, 0, 0.1)',
+                        'white-overlay': 'rgba(255, 255, 255, 0.2)',
+                    },
+                    fontSize: {
+                        '66': '66px',
+                        '56': '56px',
+                        '22': '22px',
+                        '20': '20px',
+                        '16': '16px',
+                        '14': '14px',
+                    },
+                    lineHeight: {
+                        '88': '88px',
+                        '92': '92px',
+                    },
+                    spacing: {
+                        '18': '18px',
+                        '24': '24px',
+                        '52': '52px',
+                        '59': '59px',
+                        '66': '66px',
+                        '68': '68px',
+                        '73': '73px',
+                        '80': '80px',
+                        '100': '100px',
+                        '135': '135px',
+                        '139': '139px',
+                        '140': '140px',
+                        '142': '142px',
+                        '176': '176px',
+                        '215': '215px',
+                        '320': '320px',
+                        '356': '356px',
+                        '360': '360px',
+                        '533': '533px',
+                        '591': '591px',
+                        '640': '640px',
+                        '704': '704px',
+                        '720': '720px',
+                        '960': '960px',
+                        '1024': '1024px',
+                        '1440': '1440px',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Styles pour les images de background */
+        .bg-image-1 {
+            background-image: url('img/1.jpg');
+        }
+        .bg-image-2 {
+            background-image: url('img/2.jpg');
+        }
+        .bg-image-3 {
+            background-image: url('img/3.jpg');
+        }
+        .bg-image-4 {
+            background-image: url('img/4.jpg');
+        }
+    </style>
+</head>
+<body class="w-full max-w-1440 mx-auto relative min-h-screen">
+    <!-- Zone principale avec overlay -->
+    <div class="w-full lg:w-720 h-screen min-h-96 lg:h-640 lg:absolute lg:top-16 lg:left-0 bg-cover bg-center bg-image-1 relative">
+        <!-- Contenu textuel et bouton -->
+        <div class="w-full max-w-591 h-auto lg:h-356 px-4 py-8 lg:absolute lg:top-142 lg:left-16 flex flex-col gap-4 lg:gap-6 justify-center lg:justify-start h-full lg:h-auto">
+            <h1 class="w-full lg:w-591 h-auto lg:h-176 font-bitter font-extrabold text-4xl sm:text-5xl lg:text-66 leading-tight lg:leading-88 text-white m-0">
+                Design, create, and be passionate
+            </h1>
+            <p class="w-full lg:w-591 h-auto lg:h-66 font-space-mono font-normal text-lg sm:text-xl lg:text-22 leading-tight text-white m-0">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus imperdiet sed idt.
+            </p>
+            <button class="w-auto lg:w-215 h-auto lg:h-66 rounded-full py-4 lg:py-6 px-8 lg:px-10 bg-white border-none cursor-pointer flex items-center justify-center self-start">
+                <span class="w-auto lg:w-135 h-auto lg:h-18 font-space-mono font-normal text-lg lg:text-20 leading-tight text-gray-800">
+                    Get started
+                </span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Deuxième section -->
+    <div class="w-full h-screen min-h-96 lg:w-720 lg:h-960 lg:absolute lg:top-16 lg:left-720 bg-cover bg-center bg-image-2 relative">
+        <div class="w-auto lg:w-139 h-auto lg:h-80 p-4 lg:absolute lg:top-12 lg:left-533 flex flex-col gap-2 items-end lg:items-start justify-center lg:justify-start h-full lg:h-auto">
+            <h2 class="w-auto lg:w-15 h-auto lg:h-59 font-bitter font-extrabold text-4xl sm:text-5xl lg:text-56 lg:leading-92 text-right align-middle text-gray-overlay m-0 self-end">
+                01
+            </h2>
+            <p class="w-auto lg:w-139 h-auto lg:h-18 font-bitter font-medium text-sm lg:text-14 leading-tight text-right align-middle text-gray-overlay m-0">
+                Discover the world
+            </p>
+        </div>
+    </div>
+
+    <!-- Container pour sections inférieures sur mobile -->
+    <div class="block lg:hidden w-full">
+        <!-- Troisième section -->
+        <div class="w-full h-screen min-h-96 bg-cover bg-center bg-image-3 relative">
+            <div class="absolute inset-0 bg-black bg-opacity-10"></div>
+            <div class="relative z-10 p-4 flex flex-col gap-2 justify-center h-full">
+                <h2 class="font-bitter font-extrabold text-4xl sm:text-5xl leading-tight text-gray-overlay m-0">
+                    02
+                </h2>
+                <p class="font-bitter font-medium text-sm sm:text-base leading-tight text-gray-overlay m-0">
+                    Go with your heart
+                </p>
+            </div>
+        </div>
+
+        <!-- Quatrième section -->
+        <div class="w-full h-screen min-h-96 bg-cover bg-center bg-image-4 relative">
+            <div class="absolute inset-0 bg-white bg-opacity-20"></div>
+            <div class="relative z-10 p-4 flex flex-col gap-2 justify-center h-full">
+                <h2 class="font-bitter font-extrabold text-4xl sm:text-5xl leading-tight text-gray-overlay m-0">
+                    03
+                </h2>
+                <p class="font-bitter font-medium text-sm sm:text-base leading-tight text-gray-overlay m-0">
+                    Live a full live
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sections inférieures pour desktop -->
+    <div class="hidden lg:block">
+        <!-- Troisième section -->
+        <div class="w-360 h-320 absolute top-704 left-0 bg-cover bg-center bg-image-3 bg-black-overlay">
+            <div class="w-140 h-73 absolute top-6 left-6 flex flex-col gap-2">
+                <h2 class="w-68 h-52 font-bitter font-extrabold text-56 leading-tight align-middle text-gray-overlay m-0">
+                    02
+                </h2>
+                <p class="w-140 h-18 font-bitter font-medium text-16 leading-tight align-middle text-gray-overlay m-0">
+                    Go with your heart
+                </p>
+            </div>
+        </div>
+
+        <!-- Quatrième section -->
+        <div class="w-360 h-320 absolute top-704 left-360 bg-cover bg-center bg-image-4 bg-white-overlay">
+            <div class="w-100 h-73 absolute top-6 left-6 flex flex-col gap-4">
+                <h2 class="w-68 h-52 font-bitter font-extrabold text-56 leading-92 align-middle text-gray-overlay m-0">
+                    03
+                </h2>
+                <p class="w-100 h-18 font-bitter font-medium text-16 leading-tight align-middle text-gray-overlay m-0">
+                    Live a full live
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
